@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aayush Traders – Hardware, Paint, Tiles & Sanitary | Haidergarh, Barabanki</title>
+  <meta name="description" content="Aayush Traders – Complete hardware, paint, tiles, sanitary & plumbing solutions in Haidergarh, Barabanki, UP. Retail & bulk supply available. GST registered. Call: 9935146740">
+  <meta name="keywords" content="hardware shop in Haidergarh, paint store in Barabanki, PVC pipe dealer near me, sanitary shop Haidergarh, construction material supplier Barabanki, tiles shop Haidergarh, plumbing materials Haidergarh, hardware store near Kamela Gate, bulk hardware supplier Barabanki, best paint dealer Haidergarh, bathroom fittings Haidergarh, contractor material supplier UP, building materials Haidergarh, paint and hardware shop UP, sanitary ware Barabanki, PVC pipe wholesale UP, construction tools Haidergarh, hardware dealer near me, paint bucket supplier, local hardware store India, plumbing shop near me, tile dealer Barabanki, cement material supplier, electrical and hardware store, water tank supplier Haidergarh, pipe fittings store, construction supply store UP, best sanitary shop near me, plumbing accessories dealer, hardware wholesale store, paint distributor Haidergarh, bathroom sanitary supplier, pipe store Barabanki, building tools supplier, paint shop near Kamela Chauraha, tile and sanitary shop, hardware business website India, contractor supply store, home renovation materials, construction materials UP, industrial hardware Haidergarh, paint and tools shop, local building supplier, UP hardware traders, Haidergarh paint market, sanitary fittings dealer, plumbing tools shop, tile warehouse UP, complete hardware solution, Aayush Traders Haidergarh">
+  <meta name="author" content="Aayush Traders">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Aayush Traders – Hardware, Paint & Sanitary Solutions">
+  <meta property="og:description" content="Complete hardware, paint, tiles & sanitary solutions in Haidergarh, Barabanki. Retail & bulk supply available.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: 'DM Sans', sans-serif; color: #1a1a2e; background: #fff; overflow-x: hidden; }
+
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --royal: #0b2c4d;
+      --royal-light: #103a61;
+      --royal-dark: #071e35;
+      --gold: #c9a227;
+      --gold-light: #e6bb3a;
+      --gold-dark: #a07f10;
+      --white: #ffffff;
+      --off-white: #f8f5ef;
+      --light-grey: #f2f4f7;
+      --text-dark: #1a1a2e;
+      --text-mid: #4a5568;
+      --text-light: #718096;
+      --green-wa: #25d366;
+      --green-dark: #128c7e;
+      --orange: #e87722;
+      --shadow-sm: 0 2px 12px rgba(11,44,77,0.08);
+      --shadow-md: 0 8px 32px rgba(11,44,77,0.12);
+      --shadow-lg: 0 20px 60px rgba(11,44,77,0.18);
+      --radius: 14px;
+      --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ===== PRELOADER ===== */
+    #preloader {
+      position: fixed; inset: 0; background: var(--royal);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      z-index: 9999; transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+    #preloader.hidden { opacity: 0; visibility: hidden; }
+    .preloader-logo {
+      height: 90px; width: auto;
+      animation: pulseGlow 1.2s ease-in-out infinite alternate;
+    }
+    .preloader-text {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold); font-size: 1.5rem; margin-top: 16px;
+      letter-spacing: 2px; opacity: 0; animation: fadeInUp 0.6s 0.3s forwards;
+    }
+    .preloader-bar {
+      width: 180px; height: 3px; background: rgba(255,255,255,0.15);
+      border-radius: 99px; margin-top: 24px; overflow: hidden;
+    }
+    .preloader-bar-fill {
+      height: 100%; width: 0; background: var(--gold);
+      border-radius: 99px; animation: loadBar 0.9s 0.1s forwards ease-out;
+    }
+    @keyframes pulseGlow { from { filter: drop-shadow(0 0 10px rgba(201,162,39,0.4)); transform: scale(1); } to { filter: drop-shadow(0 0 25px rgba(201,162,39,0.7)); transform: scale(1.04); } }
+    @keyframes loadBar { to { width: 100%; } }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* ===== HEADER ===== */
+    #header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 0 40px; background: transparent;
+      transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
+    }
+    #header.scrolled {
+      background: var(--royal); box-shadow: 0 4px 30px rgba(11,44,77,0.35);
+      padding: 0 40px;
+    }
+    .header-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 80px; transition: height var(--transition);
+    }
+    #header.scrolled .header-inner { height: 68px; }
+    .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+    .logo-img {
+      height: 60px; width: auto; object-fit: contain;
+      transition: transform 0.3s ease; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+    }
+    .logo-wrap:hover .logo-img { transform: scale(1.05); }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-name {
+      font-family: 'Playfair Display', serif;
+      color: var(--white); font-size: 1.45rem; font-weight: 700;
+      letter-spacing: 0.5px; line-height: 1.1;
+    }
+    .logo-tagline {
+      color: var(--gold); font-size: 0.7rem; font-weight: 500;
+      letter-spacing: 2px; text-transform: uppercase; margin-top: 2px;
+    }
+    nav { display: flex; align-items: center; gap: 6px; }
+    nav a {
+      color: rgba(255,255,255,0.88); text-decoration: none;
+      font-size: 0.9rem; font-weight: 500; letter-spacing: 0.3px;
+      padding: 8px 16px; border-radius: 8px;
+      transition: color var(--transition), background var(--transition);
+      position: relative;
+    }
+    nav a::after {
+      content: ''; position: absolute; bottom: 4px; left: 50%; transform: translateX(-50%);
+      width: 0; height: 2px; background: var(--gold); border-radius: 2px;
+      transition: width var(--transition);
+    }
+    nav a:hover { color: var(--gold); }
+    nav a:hover::after { width: 60%; }
+    .nav-cta {
+      background: var(--gold) !important; color: var(--royal) !important;
+      padding: 9px 22px !important; border-radius: 50px !important;
+      font-weight: 600 !important; font-size: 0.88rem !important;
+      margin-left: 8px; box-shadow: 0 4px 16px rgba(201,162,39,0.35) !important;
+    }
+    .nav-cta:hover { background: var(--gold-light) !important; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(201,162,39,0.5) !important; }
+    .nav-cta::after { display: none !important; }
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 8px; border: none; background: transparent;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 2px; background: var(--white);
+      border-radius: 2px; transition: var(--transition);
+    }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+    /* Mobile Nav */
+    .mobile-nav {
+      display: none; position: fixed; top: 68px; left: 0; right: 0; bottom: 0;
+      background: var(--royal-dark); z-index: 999;
+      flex-direction: column; align-items: center; justify-content: center;
+      gap: 8px; opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
+    }
+    .mobile-nav.open { opacity: 1; pointer-events: all; }
+    .mobile-nav a {
+      color: var(--white); text-decoration: none; font-size: 1.3rem;
+      font-weight: 500; padding: 14px 40px; border-radius: 12px;
+      transition: background 0.2s, color 0.2s; text-align: center; width: 80%;
+    }
+    .mobile-nav a:hover { background: rgba(201,162,39,0.15); color: var(--gold); }
+    .mobile-nav .nav-cta {
+      background: var(--gold) !important; color: var(--royal) !important;
+      margin-top: 10px; font-weight: 700 !important;
+    }
+
+    /* ===== HERO ===== */
+    #home {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1600&q=80');
+      background-size: cover; background-position: center;
+      transform: scale(1.05); animation: heroZoom 12s ease-in-out infinite alternate;
+    }
+    @keyframes heroZoom { from { transform: scale(1.05); } to { transform: scale(1.12); } }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(7,30,53,0.95) 0%, rgba(11,44,77,0.82) 50%, rgba(11,44,77,0.6) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 1; text-align: center;
+      padding: 120px 24px 80px; max-width: 900px; margin: 0 auto;
+    }
+    .hero-badge {
+      display: inline-block; background: rgba(201,162,39,0.18); border: 1px solid rgba(201,162,39,0.4);
+      color: var(--gold); font-size: 0.78rem; letter-spacing: 3px; text-transform: uppercase;
+      padding: 7px 20px; border-radius: 50px; margin-bottom: 28px;
+      animation: fadeInUp 0.7s 0.2s both;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+      color: var(--white); line-height: 1.18; font-weight: 800;
+      margin-bottom: 20px; animation: fadeInUp 0.7s 0.4s both;
+    }
+    .hero-title span { color: var(--gold); }
+    .hero-sub {
+      color: rgba(255,255,255,0.75); font-size: clamp(1rem, 2vw, 1.2rem);
+      font-weight: 300; margin-bottom: 42px; letter-spacing: 0.5px;
+      animation: fadeInUp 0.7s 0.6s both;
+    }
+    .hero-buttons {
+      display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+      animation: fadeInUp 0.7s 0.8s both;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 15px 32px; border-radius: 50px; font-size: 0.95rem;
+      font-weight: 600; cursor: pointer; text-decoration: none; border: none;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+      letter-spacing: 0.3px;
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-gold {
+      background: var(--gold); color: var(--royal);
+      box-shadow: 0 6px 24px rgba(201,162,39,0.4);
+    }
+    .btn-gold:hover { background: var(--gold-light); box-shadow: 0 10px 32px rgba(201,162,39,0.55); }
+    .btn-outline {
+      background: transparent; color: var(--white);
+      border: 2px solid rgba(255,255,255,0.6);
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: var(--white); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+    .btn-orange { background: var(--orange); color: var(--white); box-shadow: 0 6px 24px rgba(232,119,34,0.4); }
+    .btn-orange:hover { background: #f08533; box-shadow: 0 10px 32px rgba(232,119,34,0.55); }
+    .btn-wa { background: var(--green-wa); color: var(--white); box-shadow: 0 6px 24px rgba(37,211,102,0.4); }
+    .btn-wa:hover { background: #1db954; box-shadow: 0 10px 32px rgba(37,211,102,0.55); }
+    .btn-blue { background: var(--royal); color: var(--white); box-shadow: 0 6px 24px rgba(11,44,77,0.35); }
+    .btn-blue:hover { background: var(--royal-light); box-shadow: 0 10px 32px rgba(11,44,77,0.5); }
+    .hero-stats {
+      position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+      display: flex; gap: 40px; z-index: 1; animation: fadeInUp 0.7s 1s both;
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--gold); }
+    .hero-stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.65); letter-spacing: 1px; text-transform: uppercase; }
+
+    /* ===== SECTION SHARED ===== */
+    section { padding: 90px 24px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .section-header { text-align: center; margin-bottom: 60px; }
+    .section-tag {
+      display: inline-block; color: var(--gold); font-size: 0.75rem;
+      letter-spacing: 3px; text-transform: uppercase; font-weight: 600;
+      margin-bottom: 14px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.7rem); font-weight: 700;
+      color: var(--royal); line-height: 1.2;
+    }
+    .section-title span { color: var(--gold); }
+    .gold-divider {
+      width: 60px; height: 3px; background: var(--gold);
+      border-radius: 2px; margin: 18px auto 0;
+    }
+    .section-sub {
+      color: var(--text-mid); font-size: 1.05rem; max-width: 560px;
+      margin: 16px auto 0; line-height: 1.7;
+    }
+
+    /* ===== PRODUCTS SECTION ===== */
+    #products { background: var(--off-white); }
+    .products-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 28px;
+    }
+    .product-card {
+      background: var(--white); border-radius: var(--radius);
+      overflow: hidden; box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+      display: flex; flex-direction: column;
+    }
+    .product-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+    .product-img-wrap { position: relative; overflow: hidden; height: 220px; }
+    .product-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s ease; loading: lazy;
+    }
+    .product-card:hover .product-img-wrap img { transform: scale(1.08); }
+    .product-badge {
+      position: absolute; top: 14px; left: 14px;
+      background: var(--gold); color: var(--royal);
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 50px;
+    }
+    .product-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+    .product-title {
+      font-family: 'Playfair Display', serif; font-size: 1.18rem;
+      font-weight: 700; color: var(--royal); margin-bottom: 8px;
+    }
+    .product-desc { color: var(--text-mid); font-size: 0.9rem; line-height: 1.6; flex: 1; margin-bottom: 20px; }
+    .product-card .btn { padding: 11px 22px; font-size: 0.88rem; align-self: flex-start; }
+
+    /* ===== WHY CHOOSE US ===== */
+    #why { background: var(--white); }
+    .features-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 32px;
+    }
+    .feature-card {
+      text-align: center; padding: 40px 24px;
+      border-radius: var(--radius); border: 1.5px solid #e8ecf2;
+      transition: all var(--transition); position: relative; overflow: hidden;
+    }
+    .feature-card::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, var(--royal), var(--royal-light));
+      opacity: 0; transition: opacity var(--transition);
+    }
+    .feature-card:hover { border-color: var(--gold); transform: translateY(-6px); box-shadow: var(--shadow-md); }
+    .feature-card:hover::before { opacity: 1; }
+    .feature-icon {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--royal), var(--royal-light));
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px; font-size: 1.8rem;
+      transition: background var(--transition); position: relative; z-index: 1;
+    }
+    .feature-card:hover .feature-icon {
+      background: var(--gold);
+    }
+    .feature-title {
+      font-family: 'Playfair Display', serif; font-size: 1.05rem;
+      font-weight: 700; color: var(--royal); margin-bottom: 10px;
+      position: relative; z-index: 1; transition: color var(--transition);
+    }
+    .feature-card:hover .feature-title { color: var(--white); }
+    .feature-desc {
+      font-size: 0.87rem; color: var(--text-mid); line-height: 1.6;
+      position: relative; z-index: 1; transition: color var(--transition);
+    }
+    .feature-card:hover .feature-desc { color: rgba(255,255,255,0.75); }
+
+    /* ===== BULK ORDER ===== */
+    #bulk-order {
+      background: linear-gradient(135deg, var(--royal-dark) 0%, var(--royal) 60%, var(--royal-light) 100%);
+      position: relative; overflow: hidden;
+    }
+    #bulk-order::before {
+      content: ''; position: absolute; top: -50%; right: -10%;
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,162,39,0.12) 0%, transparent 70%);
+    }
+    #bulk-order .section-title { color: var(--white); }
+    #bulk-order .section-sub { color: rgba(255,255,255,0.7); }
+    .bulk-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .bulk-info h3 {
+      font-family: 'Playfair Display', serif; font-size: 1.5rem;
+      color: var(--gold); margin-bottom: 20px;
+    }
+    .bulk-info p { color: rgba(255,255,255,0.75); line-height: 1.8; font-size: 0.95rem; }
+    .bulk-perks { margin-top: 28px; display: flex; flex-direction: column; gap: 14px; }
+    .bulk-perk {
+      display: flex; align-items: center; gap: 14px;
+      color: rgba(255,255,255,0.85); font-size: 0.92rem;
+    }
+    .perk-icon { width: 36px; height: 36px; border-radius: 50%; background: rgba(201,162,39,0.2); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+    .quote-form {
+      background: var(--white); border-radius: 20px;
+      padding: 42px 36px; box-shadow: var(--shadow-lg);
+    }
+    .quote-form h3 {
+      font-family: 'Playfair Display', serif; font-size: 1.3rem;
+      color: var(--royal); margin-bottom: 28px; padding-bottom: 16px;
+      border-bottom: 2px solid var(--off-white);
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+    .form-group label { font-size: 0.83rem; color: var(--text-mid); font-weight: 600; letter-spacing: 0.3px; }
+    .form-group input, .form-group select, .form-group textarea {
+      padding: 12px 16px; border: 1.5px solid #dde2ea; border-radius: 10px;
+      font-size: 0.93rem; font-family: 'DM Sans', sans-serif; color: var(--text-dark);
+      background: var(--white); outline: none;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,162,39,0.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+    .form-group select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23718096' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; }
+    .quote-form .btn { width: 100%; justify-content: center; margin-top: 6px; padding: 16px; font-size: 1rem; }
+    #form-success {
+      display: none; text-align: center; padding: 24px;
+      background: #f0fdf4; border-radius: 12px; border: 1px solid #86efac;
+      color: #15803d; font-weight: 600; font-size: 1rem; margin-top: 16px;
+    }
+
+    /* ===== GALLERY ===== */
+    #gallery { background: var(--off-white); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 16px;
+    }
+    .gallery-item {
+      position: relative; overflow: hidden;
+      border-radius: 12px; cursor: pointer; aspect-ratio: 4/3;
+    }
+    .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; aspect-ratio: unset; }
+    .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s ease; display: block;
+    }
+    .gallery-item:hover img { transform: scale(1.07); }
+    .gallery-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(11,44,77,0.7), transparent);
+      opacity: 0; transition: opacity 0.3s ease;
+      display: flex; align-items: flex-end; padding: 20px;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay span { color: var(--white); font-weight: 600; font-size: 0.95rem; }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.92);
+      z-index: 5000; display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
+    }
+    .lightbox.active { opacity: 1; pointer-events: all; }
+    .lightbox img { max-width: 90vw; max-height: 85vh; border-radius: 8px; object-fit: contain; }
+    .lightbox-close {
+      position: absolute; top: 24px; right: 28px;
+      color: white; font-size: 2.2rem; cursor: pointer; line-height: 1;
+      background: rgba(255,255,255,0.1); border: none; border-radius: 50%;
+      width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .lightbox-close:hover { background: rgba(255,255,255,0.2); }
+
+    /* ===== TESTIMONIALS ===== */
+    #testimonials { background: var(--white); }
+    .testi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 28px; }
+    .testi-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 36px 32px; box-shadow: var(--shadow-sm);
+      border: 1.5px solid #edf0f6;
+      transition: transform var(--transition), box-shadow var(--transition);
+      position: relative;
+    }
+    .testi-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+    .testi-quote {
+      position: absolute; top: 24px; right: 28px;
+      font-size: 4rem; color: rgba(201,162,39,0.15);
+      font-family: 'Playfair Display', serif; line-height: 1;
+    }
+    .stars { display: flex; gap: 4px; margin-bottom: 16px; }
+    .star { color: var(--gold); font-size: 1.1rem; }
+    .testi-text { color: var(--text-mid); font-size: 0.93rem; line-height: 1.75; margin-bottom: 24px; font-style: italic; }
+    .testi-author { display: flex; align-items: center; gap: 14px; border-top: 1px solid #edf0f6; padding-top: 20px; }
+    .testi-avatar {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--royal), var(--royal-light));
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold); font-weight: 700; font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .testi-name { font-weight: 600; color: var(--royal); font-size: 0.95rem; }
+    .testi-role { color: var(--text-light); font-size: 0.8rem; margin-top: 2px; }
+
+    /* ===== CONTACT ===== */
+    #contact { background: var(--off-white); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 48px; align-items: start; }
+    .contact-info-card {
+      background: var(--royal); border-radius: 20px;
+      padding: 42px 36px;
+    }
+    .contact-info-card h3 {
+      font-family: 'Playfair Display', serif; font-size: 1.5rem;
+      color: var(--white); margin-bottom: 30px;
+    }
+    .contact-item {
+      display: flex; gap: 16px; margin-bottom: 26px;
+      padding-bottom: 26px; border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .contact-item:last-of-type { border-bottom: none; margin-bottom: 30px; }
+    .contact-icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: rgba(201,162,39,0.2); border: 1px solid rgba(201,162,39,0.35);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; flex-shrink: 0;
+    }
+    .contact-details { flex: 1; }
+    .contact-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+    .contact-value { color: var(--white); font-size: 0.95rem; line-height: 1.5; }
+    .contact-value a { color: var(--gold); text-decoration: none; }
+    .contact-value a:hover { text-decoration: underline; }
+    .contact-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .contact-btns .btn { padding: 11px 22px; font-size: 0.88rem; flex: 1; justify-content: center; min-width: 130px; }
+    .map-wrap { border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-md); height: 100%; min-height: 420px; }
+    .map-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--royal-dark);
+      padding: 70px 24px 30px;
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; margin-bottom: 50px; }
+    .footer-brand { display: flex; flex-direction: column; align-items: flex-start; }
+    .footer-logo-wrap { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+    .footer-logo { height: 45px; width: auto; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4)); }
+    .footer-logo-text { font-family: 'Playfair Display', serif; color: var(--white); font-size: 1.3rem; font-weight: 700; }
+    .footer-desc { color: rgba(255,255,255,0.55); font-size: 0.9rem; line-height: 1.75; max-width: 320px; }
+    .footer-gstin {
+      display: inline-block; background: rgba(201,162,39,0.15); border: 1px solid rgba(201,162,39,0.3);
+      color: var(--gold); font-size: 0.78rem; padding: 5px 14px; border-radius: 6px;
+      letter-spacing: 0.5px; margin-top: 16px;
+    }
+    .footer-col h4 {
+      font-family: 'Playfair Display', serif; color: var(--white);
+      font-size: 1.05rem; margin-bottom: 22px;
+      padding-bottom: 12px; border-bottom: 1px solid rgba(201,162,39,0.25);
+    }
+    .footer-links { display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a {
+      color: rgba(255,255,255,0.55); text-decoration: none; font-size: 0.9rem;
+      transition: color 0.2s; display: flex; align-items: center; gap: 6px;
+    }
+    .footer-links a::before { content: '›'; color: var(--gold); font-size: 1rem; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-contact-item { display: flex; gap: 10px; margin-bottom: 14px; }
+    .footer-contact-item .icon { color: var(--gold); font-size: 1rem; margin-top: 2px; }
+    .footer-contact-item p { color: rgba(255,255,255,0.6); font-size: 0.88rem; line-height: 1.5; }
+    .footer-contact-item a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    .footer-contact-item a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 28px; display: flex;
+      justify-content: space-between; align-items: center; flex-wrap: gap;
+      gap: 16px;
+    }
+    .footer-bottom p { color: rgba(255,255,255,0.4); font-size: 0.83rem; }
+    .footer-credit { color: rgba(255,255,255,0.4); font-size: 0.83rem; }
+    .footer-credit span { color: var(--gold); font-weight: 600; }
+    .footer-wa-btn {
+      position: fixed; bottom: 28px; right: 28px; z-index: 990;
+      width: 58px; height: 58px; border-radius: 50%;
+      background: var(--green-wa); color: white;
+      display: flex; align-items: center; justify-content: center; font-size: 1.7rem;
+      box-shadow: 0 6px 24px rgba(37,211,102,0.5);
+      text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: floatWA 3s ease-in-out infinite;
+    }
+    .footer-wa-btn:hover { transform: scale(1.12); box-shadow: 0 10px 32px rgba(37,211,102,0.65); }
+    @keyframes floatWA { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+
+    /* ===== FLOATING BUTTONS ===== */
+    .floating-actions {
+      position: fixed; bottom: 100px; right: 28px; z-index: 985;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .fab {
+      display: flex; align-items: center; gap: 10px;
+      padding: 12px 18px; border-radius: 50px;
+      color: white; text-decoration: none; font-size: 0.83rem; font-weight: 600;
+      white-space: nowrap; box-shadow: var(--shadow-md);
+      transition: all 0.3s ease; max-width: 52px; overflow: hidden;
+    }
+    .fab:hover { max-width: 220px; padding-right: 22px; }
+    .fab-icon { font-size: 1.3rem; flex-shrink: 0; }
+    .fab-label { opacity: 0; transition: opacity 0.25s ease; white-space: nowrap; }
+    .fab:hover .fab-label { opacity: 1; }
+    .fab-call { background: #2ecc71; }
+    .fab-call:hover { box-shadow: 0 8px 28px rgba(46,204,113,0.5); }
+    .fab-dir { background: var(--royal); }
+    .fab-dir:hover { box-shadow: 0 8px 28px rgba(11,44,77,0.5); }
+
+    /* ===== ABOUT TEASER ===== */
+    #about { background: var(--white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .about-img-wrap { position: relative; border-radius: 20px; overflow: hidden; }
+    .about-img-wrap img { width: 100%; display: block; border-radius: 20px; }
+    .about-badge {
+      position: absolute; bottom: 28px; left: 28px;
+      background: var(--royal); color: var(--white);
+      padding: 16px 24px; border-radius: 14px; border-left: 4px solid var(--gold);
+    }
+    .about-badge .num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 800; color: var(--gold); }
+    .about-badge .label { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
+    .about-content { }
+    .about-content .section-header { text-align: left; margin-bottom: 24px; }
+    .about-content .section-header .gold-divider { margin-left: 0; }
+    .about-content p { color: var(--text-mid); line-height: 1.8; font-size: 0.95rem; margin-bottom: 16px; }
+    .owner-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0; }
+    .owner-card {
+      background: var(--off-white); border-radius: 12px;
+      padding: 18px 20px; border-left: 4px solid var(--gold);
+    }
+    .owner-card .role { font-size: 0.75rem; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 4px; }
+    .owner-card .name { font-weight: 700; color: var(--royal); font-size: 1rem; }
+
+    /* ===== ANIMATIONS ===== */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .bulk-wrap { grid-template-columns: 1fr; gap: 40px; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      section { padding: 70px 20px; }
+      nav { display: none; }
+      .hamburger { display: flex; }
+      .mobile-nav { display: flex; }
+      #header { padding: 0 20px; }
+      #header.scrolled { padding: 0 20px; }
+      .logo-img { height: 50px; }
+      .hero-stats { gap: 24px; bottom: 24px; flex-wrap: wrap; justify-content: center; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-item:nth-child(1) { grid-column: span 2; }
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .bulk-wrap { gap: 28px; }
+      .form-row { grid-template-columns: 1fr; }
+      .floating-actions { bottom: 90px; right: 16px; }
+      .footer-wa-btn { bottom: 20px; right: 16px; }
+      .features-grid { grid-template-columns: 1fr 1fr; }
+      .owner-cards { grid-template-columns: 1fr; }
+      .contact-grid { gap: 28px; }
+    }
+    @media (max-width: 480px) {
+      .logo-img { height: 40px; }
+      .logo-name { font-size: 1.15rem; }
+      .hero-buttons { flex-direction: column; align-items: center; }
+      .hero-buttons .btn { width: 100%; max-width: 280px; justify-content: center; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item:nth-child(1) { grid-column: span 1; }
+      .features-grid { grid-template-columns: 1fr; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .quote-form { padding: 28px 20px; }
+      .fab { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <img src="logo.png" alt="Aayush Traders Logo" class="preloader-logo" onerror="this.style.display='none'; document.querySelector('.preloader-fallback').style.display='block'">
+  <div class="preloader-fallback" style="display:none; font-family:'Playfair Display',serif; font-size:2.2rem; color:var(--gold); font-weight:800;">AT</div>
+  <p class="preloader-text">Aayush Traders</p>
+  <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="header-inner">
+    <a href="#home" class="logo-wrap">
+      <img src="logo.png" alt="Aayush Traders Logo" class="logo-img"
+           onerror="this.style.display='none'; document.querySelector('.logo-fallback').style.display='flex'">
+      <div class="logo-fallback" style="display:none; width:52px; height:52px; background:var(--gold); border-radius:10px; align-items:center; justify-content:center; font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:800; color:var(--royal);">AT</div>
+      <div class="logo-text">
+        <span class="logo-name">Aayush Traders</span>
+        <span class="logo-tagline">Hardware · Paint · Tiles · Sanitary</span>
+      </div>
+    </a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#bulk-order">Bulk Order</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://wa.me/919935146740" class="nav-cta" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#home" onclick="closeMobileNav()">Home</a>
+  <a href="#products" onclick="closeMobileNav()">Products</a>
+  <a href="#bulk-order" onclick="closeMobileNav()">Bulk Order</a>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  <a href="https://wa.me/919935146740" class="nav-cta" target="_blank" rel="noopener" onclick="closeMobileNav()">📱 WhatsApp Us</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge">✦ Haidergarh's Trusted Hardware Store ✦</span>
+    <h1 class="hero-title">
+      Complete <span>Hardware, Paint</span><br>& Sanitary Solutions<br>in Haidergarh
+    </h1>
+    <p class="hero-sub">Retail & Bulk Supply Available · GST Registered Business · Contractor Friendly</p>
+    <div class="hero-buttons">
+      <a href="#bulk-order" class="btn btn-gold">📋 Get Bulk Quote</a>
+      <a href="#products" class="btn btn-outline">🏗️ View Products</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">500+</div>
+      <div class="hero-stat-label">Products</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">10+</div>
+      <div class="hero-stat-label">Years Serving</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">1000+</div>
+      <div class="hero-stat-label">Happy Clients</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">GST</div>
+      <div class="hero-stat-label">Registered</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">✦ What We Offer</span>
+      <h2 class="section-title">Premium <span>Product</span> Categories</h2>
+      <div class="gold-divider"></div>
+      <p class="section-sub">From PVC pipes to premium paints — everything you need for construction & renovation under one roof.</p>
+    </div>
+    <div class="products-grid">
+
+      <div class="product-card reveal reveal-delay-1">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75" alt="PVC Pipes" loading="lazy">
+          <span class="product-badge">Best Seller</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-title">PVC Pipes & Fittings</h3>
+          <p class="product-desc">High-quality PVC pipes of all diameters for water supply, drainage & plumbing. Wholesale prices available.</p>
+          <a href="https://wa.me/919935146740?text=Hello%20Aayush%20Traders!%20I'm%20interested%20in%20PVC%20Pipes%20%26%20Fittings.%20Please%20share%20pricing%20details." class="btn btn-wa" target="_blank" rel="noopener">💬 Ask on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="product-card reveal reveal-delay-2">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&q=75" alt="Paint & Coatings" loading="lazy">
+        </div>
+        <div class="product-body">
+          <h3 class="product-title">Paint & Coatings</h3>
+          <p class="product-desc">Interior, exterior, enamel & primer paints from top brands. Wide range of shades for homes & commercial projects.</p>
+          <a href="https://wa.me/919935146740?text=Hello%20Aayush%20Traders!%20I'm%20interested%20in%20Paint%20%26%20Coatings.%20Please%20share%20details." class="btn btn-wa" target="_blank" rel="noopener">💬 Ask on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="product-card reveal reveal-delay-3">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75" alt="Hardware Tools" loading="lazy">
+        </div>
+        <div class="product-body">
+          <h3 class="product-title">Hardware Tools</h3>
+          <p class="product-desc">Professional-grade hand tools, power tool accessories, fasteners, screws, bolts & construction essentials.</p>
+          <a href="https://wa.me/919935146740?text=Hello%20Aayush%20Traders!%20I'm%20interested%20in%20Hardware%20Tools.%20Please%20share%20pricing." class="btn btn-wa" target="_blank" rel="noopener">💬 Ask on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="product-card reveal reveal-delay-1">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=75" alt="Sanitary Fittings" loading="lazy">
+          <span class="product-badge">Premium</span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-title">Sanitary & Bathroom Fittings</h3>
+          <p class="product-desc">Wash basins, commodes, taps, showers & complete bathroom accessories from leading brands.</p>
+          <a href="https://wa.me/919935146740?text=Hello%20Aayush%20Traders!%20I'm%20interested%20in%20Sanitary%20%26%20Bathroom%20Fittings." class="btn btn-wa" target="_blank" rel="noopener">💬 Ask on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="product-card reveal reveal-delay-2">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=75" alt="Plumbing Materials" loading="lazy">
+        </div>
+        <div class="product-body">
+          <h3 class="product-title">Plumbing Materials</h3>
+          <p class="product-desc">CPVC, UPVC pipes, ball valves, gate valves, couplings, reducers & complete plumbing system components.</p>
+          <a href="https://wa.me/919935146740?text=Hello%20Aayush%20Traders!%20I'm%20interested%20in%20Plumbing%20Materials." class="btn btn-wa" target="_blank" rel="noopener">💬 Ask on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="product-card reveal reveal-delay-3">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=75" alt="Tiles & Construction" loading="lazy">
+        </div>
+        <div class="product-body">
+          <h3 class="product-title">Tiles & Construction Materials</h3>
+          <p class="product-desc">Floor & wall tiles, adhesives, cement, waterproofing compounds & all construction-grade materials.</p>
+          <a href="https://wa.me/919935146740?text=Hello%20Aayush%20Traders!%20I'm%20interested%20in%20Tiles%20%26%20Construction%20Materials." class="btn btn-wa" target="_blank" rel="noopener">💬 Ask on WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">✦ Our Advantage</span>
+      <h2 class="section-title">Why Choose <span>Aayush Traders</span>?</h2>
+      <div class="gold-divider"></div>
+      <p class="section-sub">We combine deep product knowledge, competitive pricing, and genuine service to be your most reliable hardware partner.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">📦</div>
+        <h3 class="feature-title">Bulk Stock Available</h3>
+        <p class="feature-desc">Large inventory ready for immediate dispatch. Contractors & builders get priority handling.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">🏛️</div>
+        <h3 class="feature-title">GST Registered Business</h3>
+        <p class="feature-desc">GSTIN: 09BNPPK3332022G. Proper billing & tax invoices for all commercial purchases.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon">🔨</div>
+        <h3 class="feature-title">Contractor & Builder Support</h3>
+        <p class="feature-desc">Special pricing, credit facilities & dedicated support for contractors and builders in UP.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">🎨</div>
+        <h3 class="feature-title">Wide Product Range</h3>
+        <p class="feature-desc">Hardware, paint, tiles, sanitary & plumbing — 500+ products, all categories under one roof.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">⭐</div>
+        <h3 class="feature-title">Trusted Local Dealer</h3>
+        <p class="feature-desc">Serving Haidergarh & Barabanki for over a decade with honest pricing and quality assurance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <img src="https://images.unsplash.com/photo-1567945716310-4745a6b7a197?w=700&q=75" alt="Aayush Traders Store" loading="lazy">
+        <div class="about-badge">
+          <div class="num">10+</div>
+          <div class="label">Years of Service</div>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <div class="section-header">
+          <span class="section-tag">✦ About Us</span>
+          <h2 class="section-title">Haidergarh's <span>Most Trusted</span><br>Hardware Partner</h2>
+          <div class="gold-divider"></div>
+        </div>
+        <p>Aayush Traders is a premier hardware, paint, tiles and sanitary store located at Kamela Chauraha, in front of Kamela Gate, Haidergarh, Barabanki, Uttar Pradesh. We have been serving the local community, contractors, and builders with genuine products at competitive prices.</p>
+        <p>Our store stocks a vast range of construction materials — from PVC pipes and plumbing accessories to premium paints, decorative tiles, and complete bathroom sanitary solutions. Whether you're building a home or renovating a commercial space, we are your one-stop destination.</p>
+        <div class="owner-cards">
+          <div class="owner-card">
+            <div class="role">Owner</div>
+            <div class="name">Jitendra Mishra</div>
+          </div>
+          <div class="owner-card">
+            <div class="role">Operations</div>
+            <div class="name">Shashank Mishra</div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-blue">📍 Find Our Store</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BULK ORDER -->
+<section id="bulk-order">
+  <div class="container" style="position:relative; z-index:1;">
+    <div class="section-header reveal">
+      <span class="section-tag" style="color:var(--gold-light);">✦ Large Orders</span>
+      <h2 class="section-title">Request a <span>Bulk Order</span> Quote</h2>
+      <div class="gold-divider"></div>
+      <p class="section-sub">We supply to contractors, builders, plumbers and retailers. Fill the form and we'll respond within hours.</p>
+    </div>
+    <div class="bulk-wrap">
+      <div class="bulk-info reveal">
+        <h3>Why Order in Bulk with Us?</h3>
+        <p>Aayush Traders provides competitive bulk pricing on all product categories. We cater to project-level requirements and ensure timely delivery from our large warehouse inventory in Haidergarh.</p>
+        <div class="bulk-perks">
+          <div class="bulk-perk"><div class="perk-icon">💰</div>Special wholesale pricing for large orders</div>
+          <div class="bulk-perk"><div class="perk-icon">📄</div>GST invoices & proper documentation</div>
+          <div class="bulk-perk"><div class="perk-icon">🚚</div>Bulk delivery coordination available</div>
+          <div class="bulk-perk"><div class="perk-icon">📞</div>Dedicated support on WhatsApp & phone</div>
+          <div class="bulk-perk"><div class="perk-icon">🤝</div>Contractor & builder credit arrangements</div>
+        </div>
+      </div>
+      <div class="quote-form reveal">
+        <h3>📋 Get Your Quote Now</h3>
+        <form id="quoteForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name *</label>
+              <input type="text" id="fname" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="fphone">Phone Number *</label>
+              <input type="tel" id="fphone" name="phone" placeholder="10-digit mobile number" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fmaterial">Material Required *</label>
+              <select id="fmaterial" name="material" required>
+                <option value="">Select category</option>
+                <option>PVC Pipes & Fittings</option>
+                <option>Paint & Coatings</option>
+                <option>Hardware Tools</option>
+                <option>Sanitary & Bathroom Fittings</option>
+                <option>Plumbing Materials</option>
+                <option>Tiles & Construction Materials</option>
+                <option>Multiple Categories</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fqty">Approximate Quantity</label>
+              <input type="text" id="fqty" name="quantity" placeholder="e.g. 50 pipes, 20 buckets">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Additional Details</label>
+            <textarea id="fmsg" name="message" placeholder="Describe your requirement, project type, delivery location, etc."></textarea>
+          </div>
+          <button type="submit" class="btn btn-orange">🚀 Send Inquiry via WhatsApp</button>
+          <div id="form-success">✅ Redirecting to WhatsApp... Your message is ready!</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">✦ Our Store</span>
+      <h2 class="section-title">Product <span>Gallery</span></h2>
+      <div class="gold-divider"></div>
+      <p class="section-sub">A glimpse into our store's vast collection of hardware, paint, pipes & sanitary items.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=85')">
+        <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=75" alt="Hardware Store Interior" loading="lazy">
+        <div class="gallery-overlay"><span>Store Interior</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85')">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75" alt="PVC Pipe Stock" loading="lazy">
+        <div class="gallery-overlay"><span>PVC Pipes</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1200&q=85')">
+        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&q=75" alt="Paint Collection" loading="lazy">
+        <div class="gallery-overlay"><span>Paint Collection</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=85')">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=75" alt="Hardware Shelves" loading="lazy">
+        <div class="gallery-overlay"><span>Hardware Section</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=85')">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=75" alt="Sanitary Items" loading="lazy">
+        <div class="gallery-overlay"><span>Sanitary Items</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200&q=85')">
+        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=75" alt="Tiles Display" loading="lazy">
+        <div class="gallery-overlay"><span>Tiles Display</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="Gallery Image">
+</div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">✦ Customer Reviews</span>
+      <h2 class="section-title">What Our <span>Customers</span> Say</h2>
+      <div class="gold-divider"></div>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">Excellent quality products at the best rates in Haidergarh. Got all my PVC pipes, paint and tiles from Aayush Traders for my home construction. The staff is very helpful and the billing process is transparent.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RK</div>
+          <div>
+            <div class="testi-name">Ramesh Kumar Verma</div>
+            <div class="testi-role">Home Builder, Haidergarh</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-2">
+        <div class="testi-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">As a contractor I've been sourcing all my construction materials from Aayush Traders for years. The bulk pricing is unbeatable and GST invoices are always provided on time. Highly recommended for any contractor in UP.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SP</div>
+          <div>
+            <div class="testi-name">Suresh Prasad</div>
+            <div class="testi-role">Building Contractor, Barabanki</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-3">
+        <div class="testi-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">Best sanitary and plumbing shop near Kamela Chauraha. Wide variety of bathroom fittings and pipes at affordable prices. Shashank ji guided us very well in choosing the right products for our renovation project.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AM</div>
+          <div>
+            <div class="testi-name">Anjali Mishra</div>
+            <div class="testi-role">Homeowner, Haidergarh</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">✦ Get In Touch</span>
+      <h2 class="section-title">Find & <span>Contact</span> Us</h2>
+      <div class="gold-divider"></div>
+      <p class="section-sub">Visit our store or reach us on WhatsApp and phone. We're happy to help!</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info-card reveal">
+        <h3>📍 Contact Information</h3>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-details">
+            <div class="contact-label">Address</div>
+            <div class="contact-value">Kamela Chauraha, In Front of Kamela Gate,<br>Haidergarh, Barabanki – 225207,<br>Uttar Pradesh, India</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-details">
+            <div class="contact-label">Phone Numbers</div>
+            <div class="contact-value">
+              <a href="tel:+919935146740">+91 99351 46740</a> (Primary)<br>
+              <a href="tel:+917007134972">+91 70071 34972</a> (Alternate)
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🏛️</div>
+          <div class="contact-details">
+            <div class="contact-label">GSTIN</div>
+            <div class="contact-value" style="letter-spacing:1px; font-size:0.88rem;">09BNPPK3332022G</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">⏰</div>
+          <div class="contact-details">
+            <div class="contact-label">Business Hours</div>
+            <div class="contact-value">Mon – Sat: 9:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 4:00 PM</div>
+          </div>
+        </div>
+        <div class="contact-btns">
+          <a href="tel:+919935146740" class="btn btn-blue">📞 Call Now</a>
+          <a href="https://wa.me/919935146740?text=Hello%20Aayush%20Traders!%20I'd%20like%20to%20inquire%20about%20your%20products." class="btn btn-wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+          <a href="https://maps.google.com/?q=Kamela+Chauraha+Haidergarh+Barabanki+UP" class="btn btn-gold" target="_blank" rel="noopener" style="color:var(--royal);">🗺️ Directions</a>
+        </div>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe
+          src="https://maps.google.com/maps?q=Haidergarh,+Barabanki,+UP,+India&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          title="Aayush Traders Location - Haidergarh, Barabanki"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="logo.png" alt="Aayush Traders" class="footer-logo"
+               onerror="this.style.display='none'">
+          <span class="footer-logo-text">Aayush Traders</span>
+        </div>
+        <p class="footer-desc">Your trusted hardware, paint, tiles & sanitary partner in Haidergarh, Barabanki. Serving contractors, builders & homeowners across Uttar Pradesh with genuine products and honest pricing.</p>
+        <span class="footer-gstin">GSTIN: 09BNPPK3332022G</span>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#bulk-order">Bulk Order</a>
+          <a href="#about">About Us</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item">
+          <span class="icon">📍</span>
+          <p>Kamela Chauraha, Haidergarh, Barabanki, UP – 225207</p>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📞</span>
+          <p><a href="tel:+919935146740">+91 99351 46740</a><br><a href="tel:+917007134972">+91 70071 34972</a></p>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">👤</span>
+          <p>Owner: Jitendra Mishra<br>Operator: Shashank Mishra</p>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📂</span>
+          <p>Hardware · Paint · Tiles · Sanitary</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Aayush Traders. All Rights Reserved.</p>
+      <p class="footer-credit">Designed & Created by <span>SHRISHANT YADAV</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP (Designer Credit) -->
+<a href="https://wa.me/919580926478" class="footer-wa-btn" target="_blank" rel="noopener" aria-label="WhatsApp" title="Contact on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- FLOATING ACTION BUTTONS -->
+<div class="floating-actions">
+  <a href="tel:+919935146740" class="fab fab-call" aria-label="Call Now">
+    <span class="fab-icon">📞</span>
+    <span class="fab-label">Call Now</span>
+  </a>
+  <a href="https://maps.google.com/?q=Kamela+Chauraha+Haidergarh+Barabanki+UP" class="fab fab-dir" target="_blank" rel="noopener" aria-label="Get Directions">
+    <span class="fab-icon">🗺️</span>
+    <span class="fab-label">Get Directions</span>
+  </a>
+</div>
+
+<script>
+  // ===== PRELOADER =====
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const preloader = document.getElementById('preloader');
+      preloader.classList.add('hidden');
+      setTimeout(() => { preloader.style.display = 'none'; }, 700);
+    }, 900);
+  });
+
+  // ===== HEADER SCROLL =====
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  }, { passive: true });
+
+  // ===== HAMBURGER MENU =====
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open');
+    document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+  });
+  function closeMobileNav() {
+    hamburger.classList.remove('open');
+    mobileNav.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMobileNav(); });
+
+  // ===== SCROLL REVEAL =====
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  // ===== SMOOTH SCROLL FOR NAV LINKS =====
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const headerHeight = header.offsetHeight;
+        const pos = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+        window.scrollTo({ top: pos, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ===== BULK ORDER FORM → WHATSAPP =====
+  document.getElementById('quoteForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('fname').value.trim();
+    const phone = document.getElementById('fphone').value.trim();
+    const material = document.getElementById('fmaterial').value;
+    const qty = document.getElementById('fqty').value.trim();
+    const msg = document.getElementById('fmsg').value.trim();
+    if (!name || !phone || !material) {
+      alert('Please fill in Name, Phone and Material Required.');
+      return;
+    }
+    const text = `*Bulk Order Inquiry – Aayush Traders*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Material:* ${material}\n*Quantity:* ${qty || 'Not specified'}\n*Details:* ${msg || 'None'}\n\n_Sent via website form_`;
+    const waUrl = `https://wa.me/919935146740?text=${encodeURIComponent(text)}`;
+    document.getElementById('form-success').style.display = 'block';
+    setTimeout(() => { window.open(waUrl, '_blank'); }, 800);
+    this.reset();
+    setTimeout(() => { document.getElementById('form-success').style.display = 'none'; }, 4000);
+  });
+
+  // ===== LIGHTBOX =====
+  function openLightbox(src) {
+    document.getElementById('lightboxImg').src = src;
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+
+</body>
+</html>
